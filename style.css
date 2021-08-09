@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+    font-family: "Avenir Light";
+    src: url("fonts/AvenirLTProLight.otf");
+}
+
+
+header {
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 100;
+}
+
+header ul {
+    margin-left: 15em;
+}
+
+.nav-link {
+    color: #f4f3f2;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 15px;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.coffee-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("/images/big_image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.banner-text {
+    color: white;
+}
+
+.banner-text h1, h5 {
+    line-height: 1.4em;
+    font-family: 'Avenir';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+}
+
+.banner-text h3 {
+    font-size: 110px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 4.5rem;
+}
+
+.banner-text h5 {
+    margin-top: 14rem;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cof {
+    width: 460px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("/images/coffee1.jpg");
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+.foot {
+    color: whitesmoke;
+    bottom: 15px;
+    position: relative;
+    background: #756f63;
+    font-size: 13px;
+    font-family: 'Avenir';
+    text-align: center;
+}
+
+.about h5, .beans h6 {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.2em;
+    color: #756f63;
+}
+
+.been {
+    padding-top: 8em;
+}
+
+.about h4, .beans h4, .info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px !important;
+    color: #756f63;
+    line-height: 1.4em;
+}
+
+.about h5:after, .beans h6:after, .info h4:after {
+    content: "";
+    border-bottom: 0.5px solid #ada9a0;
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+    padding-top: 12.5px;
+    
+}
+
+.info h4 {
+    font-size: 15px;
+    font-family: 'Avenir';
+    letter-spacing: 0.2em;
+    color: #756f63;
+}
+
+.about p, .beans p, .info p {
+    font-family: 'Avenir Light', sans-serif;
+    font-size: 14px;
+    margin-left: 6px;
+    text-align: center;
+    padding-top: 2.5em;
+    font-weight: 100;
+    color: #756f63;
+}
+
+#contact {
+    background: #f4f3f2;
+    padding: 6em 0em;
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid #ada9a0;
+    background: transparent;
+    border-radius: 0;
+    padding: 3px 3px 3px 12px;
+    color: #756f63;
+    font-size: 13px;
+    width: 60%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+label {
+    margin-top: 0.4em;
+    font-size: 15px;
+    font-family: 'Avenir';
+    color: #756f63;
+}
+
+.form {
+    position: relative;
+    left: 40%;
+    margin: 0 auto;
+    display: block;
+    color: #756f63;
+    font-size: 15px;
+    font-family: 'Avenir';
+}
+
+input[type=text]:hover,
+textarea.form-control:hover, input[type=password]:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
+}
+
+
+textarea.form-control {
+    width: 50%;
+    height: 55% !important;
+    border: 1px solid #ada9a0;
+    border-radius: 0;
+    resize: none;
+    font-size: 13px;
+    font-family: 'Avenir';
+    padding-bottom: 4rem;
+}
+
+.but {
+    position: relative;
+    align-content: unset;
+    font-family: 'Avenir';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+input[type=submit]:hover {
+    background: #756f63;
+}
+
+input[type=submit] {
+    border-radius: 0;
+    border: 1px solid #756f63;
+    color: whitesmoke;
+    background: #64625f;
+    padding: 3px 40px;
+}
+
+#myCarousel img {
+    width: 100%;
+    height: 50%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+} 
+

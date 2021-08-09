@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel = "stylesheet" href="style.css" type="text/css">
+ <link rel = "stylesheet" href="login.css" type="text/css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+ 
+ </head>
+  <body>
+    <header class = "container-fluid" id = "home">
+        <nav class = "navbar navbar-expand-lg">
+            <button class = "navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id= "menu">
+          <ul class = "navbar-nav">
+              <li class = "nav-item home">
+                  <a href = "index.html" class="nav-link">Home</a>
+              </li>
+              <li class = "nav-item bout">
+                <a href = "index.html#about" class="nav-link">Contact</a>
+              </li>
+              <li class = "nav-item contact">
+                  <a href = "index.html#contact" class="nav-link">Contact</a>
+              </li>
+              <li class = "nav-item lon">
+                  <a href = "#" class="nav-link active">Login</a>
+              </li>
+          </ul>
+    </div>
+        </nav>
+    </header>
+
+    <section class="login py-5">
+        <div class = "container text-center py-5">
+            <img src="/images/Coffee.png" style="width: 20%;">
+            <div class="form">
+                <label for="username">Username:</label>
+                <input class="input-field" id="usr" type="text">
+            </div>
+            <div class = "form">
+                <label for = "password">Password:</label>
+                <input xlass = "input-field" id="pwd" type="password">
+            </div>
+            <input type="submit" value="Submit"></button>
+        </div>
+    </section>
+   
+    <footer>
+        <div class = "container-fluid foot">
+            &copy; 2023 by CoffeeMania. Proudly created by <strong>Uko Joshua</strong>
+           </div> 
+    </footer>
+    <script>
+        $(function(){
+            $('body').fadeIn(500);
+        });
+function scrollToHash() {
+  const hash = window.location.hash
+  
+  if (hash) {
+    let element = document.getElementsByTagName("a");
+    if (hash === 'contact') {
+      // Get contact element
+    } else if (hash === 'about') {
+      // Get about us element
+    }
+    if (element) {
+      // Do animation and scroll into view
+      element.scrollIntoView({
+          behaviour: "smooth"
+      })
+    }
+  }
+}
+
+$(window).on('load', scrollToHash)
+$('a').on('click', scrollToHash)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.login {
+    border: 1px solid #756f63;
+    width: 50%;
+    padding-left: 0px !important;
+    margin: 0 auto;
+    background: #f4f3f2;
+}
+
+body {
+    background: url("images/coffee0.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    position: initial !important;
+}
+
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+* {
+    left: 0 !important;
+}
+
+img {
+    position: relative;
+    bottom: 40px;
+}
+
